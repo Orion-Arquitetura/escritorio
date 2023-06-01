@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledSection = styled.section`
   position: relative;
-  background-image: linear-gradient(#CBE1E3FF 20%, transparent);
+  background-image: linear-gradient(#CBE1E3CC 10%, transparent);
   height: 100vh;
   display: flex;
   align-items: center;
