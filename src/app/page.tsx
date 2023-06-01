@@ -3,6 +3,7 @@
 import FirstSection from "@/components/FirstSection";
 import SecondSection from "@/components/SecondSection";
 import ThirdSection from "@/components/ThirdSection";
+import FourthSection from "@/components/FourthSection";
 import styled from "styled-components";
 
 const MainStyled = styled.main`
@@ -16,6 +17,7 @@ export default function Home() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <FourthSection />
     </MainStyled>
   );
 }
