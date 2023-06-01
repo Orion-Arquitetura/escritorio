@@ -1,7 +1,7 @@
 "use client";
 
 import FirstSection from "@/components/FirstSection";
-import Image from "next/image";
+import SecondSection from "@/components/SecondSection";
 import styled from "styled-components";
 
 const MainStyled = styled.main`
@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <MainStyled>
       <FirstSection />
+      <SecondSection />
     </MainStyled>
   );
 }
