@@ -54,8 +54,8 @@ const StyledSection = styled.section`
       .social-media-div {
         z-index: 0;
         padding-top: 45px;
+        padding-bottom: 30px;
         margin-top: -30px;
-        height: 200px;
         background-image: linear-gradient(#cbe1e3aa 70%, transparent);
         color: var(--orion-blue);
         text-align: center;
@@ -134,7 +134,7 @@ export default function ThirdSection() {
                       className="social-media-icon"
                       key={element.alt}
                     >
-                      ok
+                      <img src={element.iconUrl} alt={element.alt} width={40}/>
                     </div>
                   );
                 }
