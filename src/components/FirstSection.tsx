@@ -2,9 +2,9 @@
 import styled from "styled-components";
 
 const StyledSection = styled.section`
+  background-image: linear-gradient(#cbe1e3cc 10%, transparent);
   position: relative;
-  background-image: linear-gradient(#CBE1E3CC 10%, transparent);
-  height: 100vh;
+
   display: flex;
   align-items: center;
 
@@ -32,7 +32,6 @@ const StyledSection = styled.section`
     img[alt="banner"] {
       position: relative;
       width: 50%;
-
     }
   }
 `;

@@ -5,7 +5,7 @@ const StyledSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  
   position: relative;
 
   img[alt="hexagonos"] {

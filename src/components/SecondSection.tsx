@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 const StyledSection = styled.section`
-  height: 100vh;
+  
   .second-section-list {
     list-style-image: 20% url("/list_bullet.png");
     display: flex;
