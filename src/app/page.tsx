@@ -8,6 +8,10 @@ import FourthSection from "@/components/FourthSection";
 import FifthSection from "@/components/FifthSection";
 import SixthSection from "@/components/SixthSection";
 import SeventhSection from "@/components/SeventhSection";
+import EighthSection from "@/components/EighthSection";
+import NinthSection from "@/components/NinthSection";
+import TenthSection from "@/components/TenthSection";
+import { useEffect } from "react";
 
 const MainStyled = styled.main`
   background-image: url("/background.png");
@@ -25,6 +29,9 @@ export default function Home() {
       <FifthSection />
       <SixthSection />
       <SeventhSection />
+      <EighthSection />
+      <NinthSection />
+      <TenthSection />
     </MainStyled>
   );
 }

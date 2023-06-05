@@ -8,6 +8,8 @@ const StyledSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
 
   img[alt="hexagons"] {
     position: absolute;

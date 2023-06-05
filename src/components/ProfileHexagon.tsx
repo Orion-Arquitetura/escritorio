@@ -42,7 +42,9 @@ export default function ProfileHexagon({ foto, nome, cargo }: ProfileHexagonType
       />
       <div className="text-content">
         <strong>{nome}</strong>
-        <span>{cargo}</span>
+        <span>
+          <i>{cargo}</i>
+        </span>
       </div>
     </StyledDiv>
   );
