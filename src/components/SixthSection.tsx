@@ -57,7 +57,7 @@ const funcionarios = [
   {
     foto: "imagens_funcionarios/joaopedro.webp",
     nome: "João Pedro",
-    cargo: "Acadêmica de Informática",
+    cargo: "Acadêmico de Informática",
   },
   {
     foto: "imagens_funcionarios/carol.webp",

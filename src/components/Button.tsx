@@ -8,6 +8,7 @@ const StyledButton = styled(Link)`
   background-color: white;
   font-weight: 600;
   color: #15323A;
+  text-align: center;
 `;
 
 type ButtonType = {
