@@ -5,8 +5,7 @@ const StyledSection = styled.section`
   display: flex;
 
   h1 {
-    padding-top: 4%;
-    padding-bottom: 6%;
+    padding-bottom: 2%;
     color: var(--orion-blue-darker-1);
     text-align: center;
   }
@@ -14,6 +13,8 @@ const StyledSection = styled.section`
   .profile-hexagons-div {
     display: flex;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
 
     & > ul {
       display: grid;

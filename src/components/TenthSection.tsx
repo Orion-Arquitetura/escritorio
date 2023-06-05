@@ -16,7 +16,6 @@ const StyledSection = styled.section`
     display: flex;
     padding-left: 60px;
     margin: auto;
-    height: 100vh;
 
     .text-div {
       display: flex;

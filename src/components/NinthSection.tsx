@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "./Button";
 
 const StyledSection = styled.section`
+display: flex;
   .ninth-section-main-div {
     margin: auto;
     display: flex;
@@ -37,8 +38,8 @@ export default function NinthSection() {
           <h3>PLANO DE EXECUÇÃO BIM</h3>
           <p>
             Nosso Plano de Execução BIM é um documento estratégico que estabelece as
-            diretrizes e processos específicos para a implementação efetiva do Building
-            Information Modeling em nossos projetos. Esse plano detalhado descreve os
+            diretrizes e processos específicos para a implementação efetiva do <strong>Building
+            Information Modeling</strong> em nossos projetos. Esse plano detalhado descreve os
             objetivos, as responsabilidades e as etapas a serem seguidas durante todo o
             ciclo de vida do projeto. Além disso, abordamos a gestão da informação,
             incluindo a definição dos níveis de detalhamento do modelo, as diretrizes de

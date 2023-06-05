@@ -3,7 +3,8 @@ import styled from "styled-components";
 import Button from "./Button";
 
 const StyledSection = styled.section`
-
+  align-content: center;
+  display: flex;
   .eighth-section-main-div {
     margin: auto;
     display: flex;

@@ -8,13 +8,12 @@ const StyledSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  padding-top: 4%;
 
   img[alt="hexagons"] {
     position: absolute;
     right: -40px;
-    bottom: 60%;
+    bottom: 40%;
   }
 
   .seventh-section-main-div {
