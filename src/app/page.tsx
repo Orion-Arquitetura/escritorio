@@ -12,6 +12,8 @@ import EighthSection from "@/components/EighthSection";
 import NinthSection from "@/components/NinthSection";
 import TenthSection from "@/components/TenthSection";
 import EleventhSection from "@/components/EleventhSection";
+import TwelfthSection from "@/components/TwelfthSection";
+import ThirteenthSection from "@/components/ThirteenthSection";
 
 
 const MainStyled = styled.main`
@@ -34,6 +36,8 @@ export default function Home() {
       <NinthSection />
       <TenthSection />
       <EleventhSection />
+      <TwelfthSection />
+      <ThirteenthSection />
     </MainStyled>
   );
 }

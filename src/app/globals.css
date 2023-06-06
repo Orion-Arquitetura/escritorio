@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500&family=Montserrat:wght@100;200;300;400;500&display=swap');
 :root {
   --orion-blue: #4D858B;
   --orion-blue-darker-1: #004651;
   --speech-balloon: #6FABB2;
 }
-
 * {
   box-sizing: border-box;
   padding: 0;

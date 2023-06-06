@@ -78,22 +78,22 @@ const StyledSection = styled.section`
 
 const socialMediaIcons = [
   {
-    iconUrl: "/instagram.png",
+    iconUrl: "social_media_icons/type1/instagram.png",
     alt: "instagram",
     link: "#",
   },
   {
-    iconUrl: "/facebook.png",
+    iconUrl: "social_media_icons/type1/facebook.png",
     alt: "facebook",
     link: "#",
   },
   {
-    iconUrl: "/linkedin.png",
+    iconUrl: "social_media_icons/type1/linkedin.png",
     alt: "linkedin",
     link: "#",
   },
   {
-    iconUrl: "/youtube.png",
+    iconUrl: "social_media_icons/type1/youtube.png",
     alt: "youtube",
     link: "#",
   },
