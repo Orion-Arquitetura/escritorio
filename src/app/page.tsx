@@ -36,7 +36,7 @@ export default function Home() {
        <NinthSection />
       <TenthSection />
       <EleventhSection />
-      <TwelfthSection /> */}
+      <TwelfthSection /> teste*/}
       <ThirteenthSection />
     </MainStyled>
   );
