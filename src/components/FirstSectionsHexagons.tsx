@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const Hexagon = styled.li<{ $timing?: number }>`
   @keyframes colorr {
     0% {
-      background-color: rgba(77, 133, 139, 0.2);
+      background-color: rgba(77, 133, 139, 0.1);
     }
 
     100% {
@@ -23,11 +23,11 @@ const Hexagon = styled.li<{ $timing?: number }>`
     }
   }
 
-  width: 90px;
-  height: 80px;
+  width: 100px;
+  height: 90px;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   position: relative;
-  margin-left: -19px;
+  margin-left: -23px;
   animation: colorr;
   animation-duration: 4s;
   animation-delay: ${(props) => props.$timing}s;
@@ -36,7 +36,7 @@ const Hexagon = styled.li<{ $timing?: number }>`
   animation-iteration-count: infinite;
 
   &:nth-of-type(odd) {
-    top: 41px;
+    top: 46px;
   }
 `;
 

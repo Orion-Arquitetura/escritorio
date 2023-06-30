@@ -91,7 +91,7 @@ const funcionarios = [
 export default function SixthSection() {
   return (
     <StyledSection>
-      <div className="sixth-section-main-div">
+      {/* <div className="sixth-section-main-div">
         <h1>CONHEÇA A EQUIPE ORION!</h1>
         <div className="profile-hexagons-div">
           <ul>
@@ -107,7 +107,7 @@ export default function SixthSection() {
             })}
           </ul>
         </div>
-      </div>
+      </div> */}
     </StyledSection>
   );
 }

@@ -2,77 +2,140 @@
 import styled from "styled-components";
 
 const StyledSection = styled.section`
-  
-  .second-section-list {
-    list-style-image: 20% url("/list_bullet.png");
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .second-section-banner {
+    width: 35%;
     display: flex;
     flex-direction: column;
-    row-gap: 60px;
-    color: #15323A;
+    align-items: center;
+    justify-content: center;
 
-    li {
-      display: flex;
-      flex-direction: row;
+    img[alt="orion-logo"] {
+      width: 110px;
+      border-radius: 100px;
+      margin-bottom: -50px;
+      z-index: 10;
+    }
 
-      h4 {
-        font-weight: 600;
-        font-size: 21px;
+    .second-section-banner-inner-div {
+      .second-section-banner-inner-div-text-content {
+        position: relative;
+        z-index: 9;
+        background-color: var(--orion-blue);
+        color: white;
+        border-radius: 30px;
+        padding: 30px;
+        padding-bottom: 50px;
+
+        h4 {
+          margin-bottom: 30px;
+          margin-top: 30px;
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 3ch;
+        }
+      }
+
+      .social-media-div {
+        z-index: 0;
+        padding-top: 45px;
+        padding-bottom: 30px;
+        margin-top: -30px;
+        background-image: linear-gradient(#cbe1e3aa 70%, transparent);
+        color: var(--orion-blue);
+        text-align: center;
+        padding-inline: 40px;
+
+        .social-media-icons-div {
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          column-gap: 5px;
+
+          .social-media-icon {
+            
+          }
+        }
       }
     }
-  }
+  }`;
 
-  img[alt="orion-logo"] {
-    position: relative;
-    left: 77%;
-    bottom: 17%;
-  }
-`;
-
-const data = [
+const socialMediaIcons = [
   {
-    titulo: "PRIMEIROS PASSOS",
-    legenda: "Saiba tudo sobre a empresa.",
+    iconUrl: "social_media_icons/type1/instagram.png",
+    alt: "instagram",
+    link: "#",
   },
   {
-    titulo: "CONHEÇA A EQUIPE",
-    legenda: "Conheça seus colegas de equipe.",
+    iconUrl: "social_media_icons/type1/facebook.png",
+    alt: "facebook",
+    link: "#",
   },
   {
-    titulo: "MANUAIS E NORMAS",
-    legenda: "Normas e padrões para o desenvolvimento dos projetos.",
+    iconUrl: "social_media_icons/type1/linkedin.png",
+    alt: "linkedin",
+    link: "#",
   },
   {
-    titulo: "CANAIS DE COMUNICAÇÃO",
-    legenda: "Como se comunicar na empresa.",
-  },
-  {
-    titulo: "ORION EDUCA",
-    legenda: "Treinamentos da Orion Arquitetura.",
+    iconUrl: "social_media_icons/type1/youtube.png",
+    alt: "youtube",
+    link: "#",
   },
 ];
 
 export default function SecondSection() {
   return (
     <StyledSection>
-      <ul className="second-section-list">
-        {data.map((element: { titulo: string; legenda: string }) => {
-          return (
-            <li key={element.titulo}>
-              <img
-                src={"/list_bullet.png"}
-                alt="bullet"
-                width={"20%"}
-              />
-              <div>
-                <h4>{element.titulo}</h4>
-                <p>{element.legenda}</p>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+      <div className="second-section-banner">
+        <img
+          src="/orion-arq-marca-fundo-azul.webp"
+          alt="orion-logo"
+        />
+        <div className="second-section-banner-inner-div">
+          <div className="second-section-banner-inner-div-text-content">
+            <h4>É ÓTIMO TE VER POR AQUI!</h4>
+            <div>
+              <p>
+                <i>
+                  Somos a Orion Arquitetura, uma empresa com propósito de criar ambientes
+                  saudáveis com foco no bem-estar das pessoas.
+                </i>
+              </p>
+            </div>
+          </div>
 
-      <img src="/orion-arq-marca-final.png" alt="orion-logo" width={"17%"}/>
+          <div className="social-media-div">
+            <p>Fique mais próximo de nosso trabalho nos seguindo nas Redes Sociais!</p>
+            <div className="social-media-icons-div">
+              {socialMediaIcons.map(
+                (element: { iconUrl: string; alt: string; link: string }) => {
+                  return (
+                    <div
+                      className="social-media-icon"
+                      key={element.alt}
+                    >
+                      <img
+                        src={element.iconUrl}
+                        alt={element.alt}
+                        width={40}
+                      />
+                    </div>
+                  );
+                }
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
     </StyledSection>
   );
 }

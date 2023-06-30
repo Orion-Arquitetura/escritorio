@@ -31,12 +31,12 @@ export default function Home() {
       <FourthSection />
       <FifthSection />
       <SixthSection />
-      <SeventhSection />
+      {/*<SeventhSection />
       <EighthSection />
-      <NinthSection />
+       <NinthSection />
       <TenthSection />
       <EleventhSection />
-      <TwelfthSection />
+      <TwelfthSection /> */}
       <ThirteenthSection />
     </MainStyled>
   );

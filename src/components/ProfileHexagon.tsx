@@ -4,10 +4,6 @@ const StyledDiv = styled.div`
   width: 90%;
   height: 140px;
 
-  &:nth-of-type(odd) {
-    position: relative;
-    bottom: 30%;
-  }
 
   & .picture {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);

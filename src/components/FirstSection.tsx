@@ -3,7 +3,6 @@ import styled from "styled-components";
 import FirstSectionHexagons from "./FirstSectionsHexagons";
 
 const StyledSection = styled.section`
-    border: solid 1px green;
     display: grid;
     grid-template-columns: 40% auto;
     padding-top: 100px;
@@ -14,7 +13,6 @@ const StyledSection = styled.section`
     flex-direction: column;
     row-gap: 60px;
     color: #15323A;
-    
 
     li {
       display: flex;
@@ -46,11 +44,10 @@ const StyledSection = styled.section`
 
     & img[alt="banner"] {
       position: absolute;
-      top: 17%;
+      top: 25%;
       left: 12%;
     }
   }
-
 `;
 
 const data = [
