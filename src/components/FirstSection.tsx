@@ -19,6 +19,7 @@ const StyledSection = styled.section`
       flex-direction: row;
       margin-left: -80px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+      transition: margin-left 0.5s;
 
       img {
         width: 32%;
@@ -28,10 +29,15 @@ const StyledSection = styled.section`
       h4 {
         font-weight: 600;
         font-size: 1rem;
+        transition: font-size 0.5s;
       }
 
       p {
         font-size: 0.8rem;
+      }
+
+      &:hover {
+        margin-left: 0;
       }
     }
   }
