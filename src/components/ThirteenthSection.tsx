@@ -11,7 +11,6 @@ const StyledSection = styled.section`
   align-items: center;
   text-align: center;
   min-height: fit-content;
-  padding-top: 6%;
   font-family: "Geologica", sans-serif;
 
   .twelfth-section-main-div {
@@ -39,20 +38,7 @@ const StyledSection = styled.section`
 export default function ThirteenthSection() {
   return (
     <StyledSection>
-      <div className="twelfth-section-main-div">
-        <h1>
-          Comentários?
-          <br />
-          Sugestões?
-        </h1>
-        <h1 className="email">
-          <img
-            src="/envelope.svg"
-            alt="envelope"
-          />
-          orion@orionarquitetura.com.br
-        </h1>
-      </div>
+
       <Footer />
     </StyledSection>
   );

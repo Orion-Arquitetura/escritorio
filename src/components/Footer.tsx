@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   width: 100%;
-  padding-top: 10%;
   padding-inline: 4%;
   padding-bottom: 4%;
   display: flex;
@@ -23,8 +22,7 @@ const StyledFooter = styled.footer`
       margin-left: 10px;
 
       p {
-      font-weight: 100;
-
+        font-weight: 100;
       }
     }
 
@@ -46,6 +44,31 @@ const StyledFooter = styled.footer`
 
     img {
       width: 200px;
+    }
+  }
+
+  .footer-email-div {
+    color: white;
+
+    h1:first-of-type {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    & .email {
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      & img {
+        width: 40px;
+      }
     }
   }
 `;
@@ -103,11 +126,19 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="logo-div">
-        <img
-          src="/orion-arq-marca-final.png"
-          alt="Orion"
-        />
+      <div className="footer-email-div">
+        <h1>
+          Comentários?
+          <br />
+          Sugestões?
+        </h1>
+        <h1 className="email">
+          <img
+            src="/envelope.svg"
+            alt="envelope"
+          />
+          orion@orionarquitetura.com.br
+        </h1>
       </div>
     </StyledFooter>
   );

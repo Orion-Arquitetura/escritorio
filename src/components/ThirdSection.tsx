@@ -20,6 +20,7 @@ const StyledSection = styled.section`
         rotate: 180deg;
         font-weight: 500;
         height: auto;
+        text-transform: uppercase;
       }
     }
     .third-section-images-div {
@@ -30,7 +31,7 @@ const StyledSection = styled.section`
 
       & img[alt="logo"] {
         position: absolute;
-        bottom: 20px;
+        bottom: 40px;
         left: 10px;
       }
     }
@@ -41,7 +42,7 @@ const StyledSection = styled.section`
         flex-direction: column;
         row-gap: 20px;
         list-style-type: none;
-        color: #336C72;
+        color: #336c72;
 
         & h4 {
           text-transform: uppercase;
@@ -49,7 +50,6 @@ const StyledSection = styled.section`
           text-underline-offset: 2px;
           margin-bottom: 5px;
         }
-
       }
     }
   }
@@ -60,7 +60,7 @@ export default function ThirdSection() {
     <StyledSection>
       <div className="third-section-div">
         <div className="side-bar">
-          <h3>O QUE BUSCAMOS:</h3>
+          <h3><i>O que buscamos:</i></h3>
         </div>
         <div className="third-section-images-div">
           <img
@@ -79,24 +79,34 @@ export default function ThirdSection() {
             <li>
               <h4>Qualidade, Eficiência e Inovação!</h4>
               <p>
-                Tudo isso para sermos referência de qualidade, eficiência e inovação em
-                arquitetura e engenharia para a saúde.
+                <i>
+                  Tudo isso para sermos referência de qualidade, eficiência e inovação em
+                  arquitetura e engenharia para a saúde.
+                </i>
               </p>
             </li>
             <li>
               <h4>Humanização</h4>
-              <p>Pensar em quem vai usar o espaço é o diferencial do nosso escritório.</p>
+              <p>
+                <i>
+                  Pensar em quem vai usar o espaço é o diferencial do nosso escritório.
+                </i>
+              </p>
             </li>
             <li>
               <h4>Padrões e Processos</h4>
               <p>
-                Consolidados permite que trabalhemos de forma integrada, presencial ou
-                remotamente. Com qualidade, eficiência e inovação.
+                <i>
+                  Consolidados permite que trabalhemos de forma integrada, presencial ou
+                  remotamente. Com qualidade, eficiência e inovação.
+                </i>
               </p>
             </li>
             <li>
               <h4>Experiência do Usuário</h4>
-              <p>A jornada do usuário é pensada em todas as fases do projeto.</p>
+              <p>
+                <i>A jornada do usuário é pensada em todas as fases do projeto.</i>
+              </p>
             </li>
           </ul>
         </div>

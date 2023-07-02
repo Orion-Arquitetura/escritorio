@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const Hexagon = styled.li<{ $timing?: number }>`
   @keyframes colorr {
     0% {
-      background-color: rgba(77, 133, 139, 0.1);
+      background-color: rgba(77, 133, 139, 0.0);
     }
 
     100% {

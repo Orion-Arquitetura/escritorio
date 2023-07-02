@@ -1,113 +1,81 @@
+/* eslint-disable @next/next/no-img-element */
 import styled from "styled-components";
-import ProfileHexagon, { ProfileHexagonType } from "./ProfileHexagon";
 
 const StyledSection = styled.section`
-  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
-  h1 {
-    padding-bottom: 2%;
-    color: var(--orion-blue-darker-1);
-    text-align: center;
-  }
+  .sixth-section-main-div {
+    width: 42%;
+    margin-inline: auto;
+    padding: 30px;
+    border-radius: 50px;
+    color: #004651;
+    background-color: #6fabb2aa;
 
-  .profile-hexagons-div {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    .title-div {
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-    & > ul {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: 1fr 1fr;
-      row-gap: 100px;
-      column-gap: 0px;
-      width: 80%;
-
-      flex-wrap: wrap;
+    p {
+      margin-top: 20px;
+      text-align: justify;
     }
   }
-`;
 
-const funcionarios = [
-  {
-    foto: "imagens_funcionarios/katia.png",
-    nome: "Kátia Fugazza",
-    cargo: "Sócia e Arq. Titular",
-  },
-  {
-    foto: "imagens_funcionarios/paulo.jpg",
-    nome: "Paulo Fugazza",
-    cargo: "Informática e Administrador",
-  },
-  {
-    foto: "imagens_funcionarios/walter.webp",
-    nome: "Walter Jr",
-    cargo: "Eng. Elétrico e de Segurança",
-  },
-  {
-    foto: "imagens_funcionarios/cris.webp",
-    nome: "Cris Vieira",
-    cargo: "BIM Manager e Orçamentista",
-  },
-  {
-    foto: "imagens_funcionarios/marcosmarques.webp",
-    nome: "Marcos Marques",
-    cargo: "Gerente de Projetos e Engenheiro",
-  },
-  {
-    foto: "imagens_funcionarios/joaopedro.webp",
-    nome: "João Pedro",
-    cargo: "Acadêmico de Informática",
-  },
-  {
-    foto: "imagens_funcionarios/carol.webp",
-    nome: "Caroline Freire",
-    cargo: "Projetista",
-  },
-  { foto: "imagens_funcionarios/julia.jpg", nome: "Julia Telles", cargo: "Projetista" },
-  {
-    foto: "imagens_funcionarios/carvalho.jpg",
-    nome: "Gabriela Carvalho",
-    cargo: "Acadêmica de Arquitetura",
-  },
-  {
-    foto: "imagens_funcionarios/marcos.webp",
-    nome: "Marcos Lima",
-    cargo: "Acadêmico de Arquitetura",
-  },
-  {
-    foto: "imagens_funcionarios/camila.webp",
-    nome: "Camila Oliveira",
-    cargo: "Acadêmica de Arquitetura",
-  },
-  {
-    foto: "imagens_funcionarios/michel.webp",
-    nome: "Michel Carvalho",
-    cargo: "Jovem Aprendiz",
-  },
-];
+  button {
+    border: solid 2px black;
+    padding: 10px 30px;
+    border-radius: 100px;
+    background-color: white;
+    font-weight: 600;
+    color: #004651;
+    text-align: center;
+    font-size: 14px;
+    width: 20%;
+    margin-top: 40px;
+    margin-inline: auto;
+    display: block;
+    cursor: pointer;
+  }
+`;
 
 export default function SixthSection() {
   return (
     <StyledSection>
-      {/* <div className="sixth-section-main-div">
-        <h1>CONHEÇA A EQUIPE ORION!</h1>
-        <div className="profile-hexagons-div">
-          <ul>
-            {funcionarios.map((element: ProfileHexagonType) => {
-              return (
-                <ProfileHexagon
-                  key={element.nome}
-                  foto={element.foto}
-                  nome={element.nome}
-                  cargo={element.cargo}
-                />
-              );
-            })}
-          </ul>
+      <div className="sixth-section-main-div">
+        <div className="title-div">
+          <h1>Nossos canais de comunicação</h1>
+          <img
+            src="/baloes.svg"
+            alt="baloes"
+            width={70}
+          />
         </div>
-      </div> */}
+
+        <p>
+          Todos da Orion Arquitetura possuem um acesso para utilizar a plataforma{" "}
+          <strong>Teams</strong> da
+          <strong>Microsoft</strong>. Dentro da plataforma há a subdivisão de projetos e
+          pelo <strong>Planner (Microsoft)</strong> determinamos as tarefas que precisam
+          ser cumpridas dentro dessas subdivisões. Para o compartilhamento de arquivos
+          dentro da equipe, utilizamos o <strong>Onedrive</strong> ou o{" "}
+          <strong>Sharepoint</strong>. E para as revisões internas, utilizamos o{" "}
+          <strong>Construcode</strong>.{" "}
+          <i>
+            Caso não saiba como utilizar os programas citados acima, veja os vídeos na aba
+            Orion Educa
+          </i>
+          .
+        </p>
+      </div>
+
+      <button>Clique aqui para <br /> saber mais!</button>
     </StyledSection>
   );
 }
