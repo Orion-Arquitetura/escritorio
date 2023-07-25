@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const Hexagon = styled.li<{ $timing?: number }>`
-  @keyframes colorr {
+  /* @keyframes colorr {
     0% {
       background-color: rgba(77, 133, 139, 0.0);
     }
@@ -21,19 +21,20 @@ const Hexagon = styled.li<{ $timing?: number }>`
     100% {
       background-color: rgba(77, 133, 139, 0.5);
     }
-  }
+  } */
 
   width: 100px;
   height: 90px;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   position: relative;
   margin-left: -23px;
-  animation: colorr;
+  background-color: rgba(77, 133, 139, 0.3);
+  /* animation: colorr;
   animation-duration: 4s;
   animation-delay: ${(props) => props.$timing}s;
   animation-fill-mode: both;
   animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 
   &:nth-of-type(odd) {
     top: 46px;
@@ -48,7 +49,7 @@ export default function FirstSectionHexagons() {
           return (
             <Hexagon
               key={Math.random() * 100}
-              $timing={Math.random() * 20}
+              // $timing={Math.random() * 20}
             />
           );
         })}
@@ -58,7 +59,7 @@ export default function FirstSectionHexagons() {
           return (
             <Hexagon
               key={Math.random() * 100}
-              $timing={Math.random() * 20}
+              // $timing={Math.random() * 20}
             />
           );
         })}
@@ -68,7 +69,7 @@ export default function FirstSectionHexagons() {
           return (
             <Hexagon
               key={Math.random() * 100}
-              $timing={Math.random() * 20}
+              // $timing={Math.random() * 20}
             />
           );
         })}
@@ -78,7 +79,7 @@ export default function FirstSectionHexagons() {
           return (
             <Hexagon
               key={Math.random() * 100}
-              $timing={Math.random() * 20}
+              // $timing={Math.random() * 20}
             />
           );
         })}
@@ -88,7 +89,7 @@ export default function FirstSectionHexagons() {
           return (
             <Hexagon
               key={Math.random() * 100}
-              $timing={Math.random() * 20}
+              // $timing={Math.random() * 20}
             />
           );
         })}
