@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styled from "styled-components";
 import Button from "./Button";
+import Link from "next/link";
 
 const StyledSection = styled.section`
   margin-top: 50px;
@@ -37,18 +38,24 @@ const StyledSection = styled.section`
 
     button {
       border: solid 2px black;
-      padding: 10px 30px;
       border-radius: 100px;
-      background-color: white;
-      font-weight: 600;
-      color: #004651;
-      text-align: center;
-      font-size: 14px;
       width: 40%;
       margin-top: 10px;
       margin-inline: auto;
-      display: block;
-      cursor: pointer;
+
+      & a {
+        padding: 10px 30px;
+        width: 100%;
+        border-radius: 100px;
+        background-color: white;
+        font-weight: 600;
+        color: #004651;
+        text-align: center;
+        font-size: 14px;
+        margin-inline: auto;
+        display: block;
+        cursor: pointer;
+      }
     }
   }
 `;
@@ -63,8 +70,8 @@ export default function SeventhSection() {
           </h1>
           <p>
             <i>
-              Nesta página você encontrará todos os cursos de educação continuada
-              produzidos pela Orion!
+              Nesta página você encontrará todos os cursos de educação
+              continuada produzidos pela Orion!
             </i>
           </p>
         </div>
@@ -72,12 +79,16 @@ export default function SeventhSection() {
           <h2>&quot;O que posso aprender hoje?&quot;</h2>
           <p>
             <i>
-              Seu acesso vai de dicas até cursos específicos das disciplinas que usamos no
-              nosso dia a dia
+              Seu acesso vai de dicas até cursos específicos das disciplinas que
+              usamos no nosso dia a dia
             </i>
           </p>
         </div>
-        <button>Clique aqui e acesse nossos cursos!</button>
+        <button>
+          <Link href="https://educa.orionarquitetura.com" target="_blank">
+            Clique aqui e acesse nossos cursos!
+          </Link>
+        </button>
       </div>
     </StyledSection>
   );

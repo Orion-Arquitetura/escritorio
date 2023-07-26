@@ -38,7 +38,6 @@ const StyledSection = styled.section`
 export default function ThirteenthSection() {
   return (
     <StyledSection>
-
       <Footer />
     </StyledSection>
   );
