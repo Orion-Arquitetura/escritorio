@@ -6,9 +6,14 @@ export const metadata = {
   description: "Hub da Orion",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="pt-BR">
+      <link rel="icon" href="/orion-estrela.png" sizes="any" />
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
