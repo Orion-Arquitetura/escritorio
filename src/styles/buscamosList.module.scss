@@ -1,0 +1,27 @@
+.buscamosList {
+    display: flex;
+    margin-top: 16px;
+    column-gap: 5px;
+    height: 50%;
+}
+
+.buscamosListItem {
+    background-color: #203D42;
+    flex-basis: 25%;
+    padding: 2%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    div {
+        height: 40%;
+        display: flex;
+        align-items: start;
+    }
+}
