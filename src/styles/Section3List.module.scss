@@ -1,0 +1,43 @@
+.section3List {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.section3ListItem {
+    flex-basis: calc(50% - 24px);
+    min-height: 50%;
+    padding: 4px 20px;
+    border-left: 5px solid #203D42;
+
+    h2 {
+        font-family: 'Kalam', cursive;
+        margin-bottom: 12px;
+    }
+}
+
+.cardButton {
+    max-width: 223px;
+    display: block;
+    margin-inline: auto;
+    margin-top: 12px;
+    border-radius: 50px;
+    border: 0;
+
+
+    a {
+        display: block;
+        padding: 8px;
+        border-radius: 50px;
+        border: solid 2px #203D42;
+        color: #203D42;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #15323A;
+            color: white;
+        }
+    }
+}

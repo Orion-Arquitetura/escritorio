@@ -24,4 +24,38 @@
     margin-top: 2px;
     background-size: cover;
     background-position: center;
+
+    &:hover {
+        & div {
+            opacity: 1;
+        }
+    }
+
+    & div {
+        background-color: rgba(142, 166, 170, 100%);
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        opacity: 0;
+        box-shadow: inset 0 14px 20px rgba(0, 0, 0, 35%);
+        transition: opacity 0.1s ease;
+
+        & p {
+            cursor: context-menu;
+        }
+
+        & p:first-of-type {
+            font-size: 14px;
+            font-family: 'Kadwa', serif;
+            margin-bottom: -4px;
+        }
+
+        & p:last-of-type {
+            font-size: 12px;
+        }
+    }
 }
