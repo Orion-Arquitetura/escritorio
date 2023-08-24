@@ -3,6 +3,8 @@
     max-width: 100vw;
     display: flex;
     top: -65px;
+    justify-content: center;
+    left: -10px;
 
     & ul {
         position: relative;
@@ -19,8 +21,7 @@
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
     height: 130px;
     width: 115%;
-    background-image: url("/poligon-background.png");
-    box-shadow: inset 0 10px 8px rgba(0, 0, 0, 35%);
+    background-image: url("/polygon-background.png");
     margin-top: 2px;
     background-size: cover;
     background-position: center;
