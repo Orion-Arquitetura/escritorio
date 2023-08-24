@@ -1,5 +1,5 @@
 import Section3ListItem from "../Section3ListItem";
-import styles from "../../styles/Section3List.module.scss";
+import styles from "../../styles/Section3.module.scss";
 
 const cardsData = [
     {
@@ -21,15 +21,7 @@ const cardsData = [
 
 export default function Section3() {
     return (
-        <section
-            style={{
-                paddingInline: "8%",
-                height: "100vh",
-                position: "relative",
-                display: "grid",
-                placeItems: "center",
-            }}
-        >
+        <section className={styles.section3}>
             <ul className={styles.section3List}>
                 {cardsData.map((card) => {
                     return (

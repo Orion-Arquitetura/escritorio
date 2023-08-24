@@ -1,8 +1,21 @@
+.section3 {
+    padding: 8%;
+    height: fit-content;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+}
+
 .section3List {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+
+    @media (max-width: 400px) {
+        margin-top: 50px;
+    }
 }
 
 .section3ListItem {
@@ -15,6 +28,15 @@
         font-family: 'Kalam', cursive;
         margin-bottom: 12px;
     }
+
+    
+    strong {
+        color: #203D42;
+    }
+
+    @media (max-width: 400px) {
+        flex-basis: 100%;
+    }
 }
 
 .cardButton {
@@ -24,7 +46,6 @@
     margin-top: 12px;
     border-radius: 50px;
     border: 0;
-
 
     a {
         display: block;
@@ -39,5 +60,10 @@
             background-color: #15323A;
             color: white;
         }
+    }
+
+    @media (max-width: 400px) {
+        margin-top: 50px;
+        
     }
 }

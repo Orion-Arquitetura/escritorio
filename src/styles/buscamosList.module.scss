@@ -3,6 +3,11 @@
     margin-top: 16px;
     column-gap: 5px;
     min-height: 280px;
+
+    @media (max-width: 400px) {
+        flex-direction: column;
+        row-gap: 5vw;
+    }
 }
 
 .buscamosListItem {
@@ -23,5 +28,19 @@
         height: 40%;
         display: flex;
         align-items: flex-start;
+    }
+
+    @media (max-width: 400px) {
+        justify-content: center;
+        padding-left: 5%;
+        h3 {
+            width: 50%;
+        }
+
+        min-height: 30vw;
+
+        .buscamosListItemDescricao {
+            display: none;
+        }
     }
 }

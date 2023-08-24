@@ -4,14 +4,33 @@
     display: flex;
     top: -65px;
     justify-content: center;
-    left: -10px;
+    overflow: hidden;
 
     & ul {
         position: relative;
-        width: 121px;
+        width: calc(100vw/11.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         &:nth-of-type(even) {
-            top: 65px;
+            top: 5vw;
+        }
+    }
+
+    @media (max-width: 400px) {
+    overflow: visible;
+
+        & ul {
+            width: calc(100vw/6.3);
+
+            &:nth-of-type(even) {
+                top: 9vw;
+            }
+
+            &:nth-of-type(odd) {
+                top: 1vw;
+            }
         }
     }
 }
@@ -19,10 +38,11 @@
 .hexagon {
     position: relative;
     clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
-    height: 130px;
-    width: 115%;
+    height: 9.5vw;
+    width: 10vw;
     background-image: url("/polygon-background.png");
-    margin-top: 2px;
+    box-shadow: inset 0 10px 8px rgba(0, 0, 0, 35%);
+    margin-top: 0.2vw;
     background-size: cover;
     background-position: center;
 
@@ -58,5 +78,10 @@
         & p:last-of-type {
             font-size: 12px;
         }
+    }
+
+    @media (max-width: 400px) {
+        height: calc(100vw/6);
+        width: calc(100vw/5.8);
     }
 }

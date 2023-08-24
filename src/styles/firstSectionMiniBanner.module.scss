@@ -1,12 +1,19 @@
 .firstSectionMiniBanner {
-    width: 30%;
+    width: 390px;
     position: absolute;
     bottom: 10%;
-    right: 10%;
+    right: 5vw;
     text-align: center;
     border-radius: 18px;
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(32, 61, 66, 100%) 80%, rgba(255, 255, 255, 1) 90%);
     padding-bottom: 30px;
+
+    @media (max-width: 400px) {
+        position: relative;
+        width: 95vw;
+        margin-inline: auto;
+        right: auto;
+    }
 }
 
 .roundDiv {
@@ -18,9 +25,10 @@
     translate: 50% 100%;
     background-image: url("/orion-estrela.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: 60%;
+    background-size: 70%;
     border-radius: 100px;
+    background-color: #D9D9D9;
 }
 
 .mainTextDiv {

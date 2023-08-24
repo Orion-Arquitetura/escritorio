@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import styles from "../styles/Section3List.module.scss";
+import styles from "../styles/Section3.module.scss";
 
 export default function Section3ListItem({ title, buttonText, buttonHref, children }: { title: string, buttonText?: string, buttonHref?: string, children: ReactNode }) {
     return (
