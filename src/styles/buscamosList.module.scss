@@ -5,6 +5,7 @@
     min-height: 280px;
 
     @media (max-width: 400px) {
+        margin-top: 50px;
         flex-direction: column;
         row-gap: 5vw;
     }
