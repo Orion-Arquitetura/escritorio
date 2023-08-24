@@ -8,11 +8,15 @@
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(32, 61, 66, 100%) 80%, rgba(255, 255, 255, 1) 90%);
     padding-bottom: 30px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 850px) {
+        width: 55vw;
         position: relative;
-        width: 95vw;
         margin-inline: auto;
         right: auto;
+    }
+
+    @media (max-width: 400px) {
+        width: 95vw;
     }
 }
 
