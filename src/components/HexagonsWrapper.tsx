@@ -35,17 +35,17 @@ const funcionarios = [
     {
         foto: "imagens_funcionarios/camila.webp",
         nome: "Camila Oliveira",
-        cargo: "Acadêmica de Arquitetura",
+        cargo: "Designer de serviços",
     },
     {
         foto: "imagens_funcionarios/marcos.webp",
         nome: "Marcos Lima",
-        cargo: "Acadêmico de Arquitetura",
+        cargo: "Projetista",
     },
     {
         foto: "imagens_funcionarios/carvalho.jpg",
         nome: "Gabriela Carvalho",
-        cargo: "Acadêmica de Arquitetura",
+        cargo: "Projetista",
     },
     {
         foto: "imagens_funcionarios/joaopedro.webp",
@@ -57,8 +57,11 @@ const funcionarios = [
         nome: "Caroline Freire",
         cargo: "Projetista",
     },
-    { foto: "imagens_funcionarios/julia.jpg", nome: "Julia Telles", cargo: "Projetista" },
-
+    {
+        foto: "imagens_funcionarios/julia.jpg",
+        nome: "Julia Telles",
+        cargo: "Projetista"
+    },
     {
         foto: "imagens_funcionarios/michel.webp",
         nome: "Michel Carvalho",
@@ -87,14 +90,14 @@ export default function HexagonsWrapper() {
                     key={Math.random() * 1000}
                     img="/imagens_funcionarios/carvalho.jpg"
                     nome="Gabriela Carvalho"
-                    cargo="Acadêmica de Arquitetura"
+                        cargo="Projetista"
                 />
 
                 <Hexagon
                     key={Math.random() * 1000}
                     img="/imagens_funcionarios/camila.webp"
                     nome="Camila Oliveira"
-                    cargo="Acadêmica de Arquitetura"
+                        cargo="Designer de serviços"
                 />
             </ul>
             <ul>
@@ -122,7 +125,7 @@ export default function HexagonsWrapper() {
                     key={Math.random() * 1000}
                     img="/imagens_funcionarios/marcos.webp"
                     nome="Marcos Lima"
-                    cargo="Acadêmico de Arquitetura"
+                        cargo="Projetista"
                 />
             </ul>
             <ul>
