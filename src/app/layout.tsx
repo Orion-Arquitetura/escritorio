@@ -18,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <link rel="icon" href="/orion-estrela.png" sizes="any" />
-      <body className={inter.className}>{children}</body>
-      <Footer />
+      <body className={inter.className}>
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
