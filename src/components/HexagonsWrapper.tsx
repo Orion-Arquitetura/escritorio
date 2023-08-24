@@ -90,7 +90,11 @@ export default function HexagonsWrapper() {
 
     const breakpoint = 800
 
-    if (windowWidth < 800) {
+    if (!windowWidth) {
+        return null
+    }
+
+    if (windowWidth! < 800) {
         return <div className={styles.hexagonsWrapper}>
                      <ul>
                     {new Array(2).fill(1).map((el) => (
@@ -242,7 +246,7 @@ export default function HexagonsWrapper() {
         </div>
     }
 
-    if (windowWidth > 800) {
+    if (windowWidth! > 800) {
         return (
             <div className={styles.hexagonsWrapper}>
                 <ul>
