@@ -26,11 +26,7 @@ const cardsData = [
 export default function BuscamosList() {
     return (
         <ul className={styles.buscamosList}>
-            {cardsData.map((card) => (
-                <BuscamosListItem key={card.title} title={card.title}>
-                    {card.description}
-                </BuscamosListItem>
-            ))}
+            {cardsData.map((card) => <BuscamosListItem key={card.title} title={card.title} description={card.description} />)}
         </ul>
     );
 }
