@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import styles from "../styles/buscamosList.module.scss";
 
 export default function BuscamosListItem(props: { title: string, description: string}) {

@@ -1,17 +1,9 @@
 import BuscamosList from "../BuscamosList";
+import styles  from "../../styles/Section2.module.scss"
 
 export default function Section2() {
     return (
-        <section
-            style={{
-                paddingInline: "8%",
-                paddingTop: "2%",
-                paddingBottom: "2%",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-            }}
-        >
+        <section className={styles.section2}>
             <h1 style={{ fontFamily: "'Kalam', cursive", color: "#203D42" }}>
                 O que buscamos
             </h1>
